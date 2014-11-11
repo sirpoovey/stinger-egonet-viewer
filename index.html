@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SCDemoApp">
+
+<head>
+    <title>STINGER Egonet Viewer</title>
+
+    <link href="css/insights.standalone.css" rel="stylesheet">
+    <script src="js/d3.min.js"></script>
+    <script src="js/insights.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module("SCDemoApp", []);
+    </script>
+    <script src="js/controllers/SCDemo.js"></script>
+    <script src="js/directives/Egonet.js"></script>
+</head>
+<body ng-controller="EgonetGraph">
+<egonet-graph selected-node="node" x-dim="300" y-dim="300"></egonet-graph>
+</body>
+</html>
